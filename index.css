@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBar {
+	background: #2176bc;
+	background: linear-gradient(90deg, #2176bc 0%, #2176bc 60%, #28bbff 100%);
+	/* position: fixed; */
+	width: 100%;
+}
+
+.navbarImg {
+	height: 100px;
+	width: 150px;
+}
+
+.navlinks {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.navbaritem {
+	display: inline;
+}
+
+.link {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	margin: auto;
+	text-decoration: none;
+}
+
+.carousel {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  .carousel-slide {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  .carousel-prev {
+	left: 10px;
+	top: 30px;
+}
+
+.carousel-next {
+	right: 10px;
+	top: 30px;
+  }
+  
+  @keyframes slide {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+
+.slide1 {
+	background-image: url('img/background1.jpg');
+	color: white;
+}
+.slide2 {
+	background-image: url('img/background2.jpg');
+	color: white;
+}
+.slide3 {
+	background-image: url('img/background3.jpg');
+	color: white;
+}
+
+.section2 {
+	background-color: #28bbff;
+	color: white;
+	text-align: center;
+}
+
+.section3 {
+	text-align: center;
+}
+
+.wrapper {
+	width: 300px;
+	margin: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+	display:inline ;
+  }
+  
+  .wrapper-header {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	background-color: #f0f0f0;
+	cursor: pointer;
+  }
+  
+  .arrow-btn {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	border: none;
+	background-color: transparent;
+	background-image: url('img/arrow.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: transform 0.3s ease-in-out;
+  }
+  
+  .wrapper.open .arrow-btn {
+	transform: rotate(180deg);
+  }
+  
+  .title {
+	margin: 0;
+  }
+  
+  .wrapper-content {
+	padding: 10px;
+  }
+  
+  .paragraph {
+	margin: 0;
+  }
+
+  .footer {
+	background-color: #f0f0f0;
+	padding: 20px;
+  }
+  
+  .footer-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+  }
+  
+  .footer-column {
+	flex: 0 0 48%; /* Adjust the width as needed */
+  }
+  
+  .footer-title {
+	margin-top: 0;
+  }
+  
+  .footer-links {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .footer-links li {
+	margin-bottom: 5px;
+  }
+  
+  .footer-links a {
+	text-decoration: none;
+	color: #333;
+  }
+  
+  .footer-text {
+	margin: 0;
+  }
+  
+  .newsletter-form {
+	display: flex;
+	margin-top: 10px;
+  }
+  
+  .newsletter-input {
+	flex: 1;
+	padding: 5px;
+  }
+  
+  .newsletter-button {
+	padding: 5px 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .footer-logo {
+	max-width: 100px;
+  }
+  
